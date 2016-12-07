@@ -9,8 +9,10 @@ public class Barcode implements Comparable<Barcode>{
 //               or zip contains a non digit
 //               _zip and _checkDigit are initialized.
   public Barcode(String zip) 
-      {_zip = zip;
-}
+      
+      {if (!(_zip.length == 5 && zip.matches("[0-9]+"))){
+	      throw new IllegalArgumentException;}
+_zip = zip;  }
 
 // postcondition: Creates a copy of a bar code.
   public Barcode clone(){}
