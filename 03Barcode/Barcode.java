@@ -14,12 +14,17 @@ public class Barcode implements Comparable<Barcode>{
 	      throw new IllegalArgumentException;}
 _zip = zip;  }
 
-// postcondition: Creates a copy of a bar code.
-  public Barcode clone(){}
+  private int toCode (string zipper){
+      
+      string[] zipArray = {":::||", " ::|:|", "::||:"  , " :|::|" , " :|:|:",  " :||::",  " |:::|",  " |::|:" ,  " |:|::",  " ||::: "   };
+      return zipArray[Integer.valueof(zipper.substring(0))]
 
+  }
 
 // postcondition: computes and returns the check sum for _zip
-  private int checkSum(){}
+  private int checkSum(){
+
+}
 
 //postcondition: format zip + check digit + Barcode 
 //ex. "084518  |||:::|::|::|::|:|:|::::|||::|:|"      
