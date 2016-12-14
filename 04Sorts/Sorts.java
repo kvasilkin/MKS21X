@@ -11,18 +11,39 @@ public class Sorts{
   *@param data  the elements to be sorted.
   */
   public static void selectionSort(int[] data){
-      int min = data[i];
+   
       for (int i = 0; i < data.length ; i ++){
+      int min = data[i];
+      int hold = 0;
+
 	  for(int j = 0; j < data.length ; j++){
 	      if (data[j] < min){
-		  min = data[j];}}
+		  min = data[j];
+}
+}
 	  data[i] = min;}
-}
+  }
 
- 
+    public static void insertionSort(int[] data){
+	int temp = 0;
+	int hold = 0;
+	for (int i = 1; i < data.length - 1 ; i++){
+	    if (data[i] > data [i+1]){
 
+		temp = data [i+1];
+		
+		for (int j = 0; j < data.length; j++){
+		    if (temp < data[j]){
+			hold = data[j];
+			
 
-}
+			for (int k = data.length; k > j ; k++){
+			    data[k] = data[k-1];}
+		    }
+			data[j] = temp;
+			data[j + 1] = hold;
+		   
 
-}
+		}}}}}
+public static void main
 
