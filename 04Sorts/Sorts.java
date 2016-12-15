@@ -44,6 +44,23 @@ public class Sorts{
 			data[j + 1] = hold;
 		   
 
-		}}}}}
-public static void main
+		}}}}
+
+    public static void bubbleSort (int[]data){
+	int hold = 0;
+	int complete = 0;
+	int counter = 0;
+	for (int i = 0; i < data.length - counter; i++){
+	    if(data[i] > data[i+1]){
+		hold = data[i];
+		data[i] = data[i+1];
+		data[i+1] = hold;
+		complete ++;}
+	   
+	    if (counter > 0){
+		counter = 0;
+		complete ++;}
+	    else {return ;
+	    }
+	}}}
 
