@@ -1,13 +1,13 @@
 
 import javax.swing.*;
 import java.awt.*;
-public class Window2 extends JFrame {
+public class Window2 extends JFrame implements ActionListener {
  private Container pane;
 
- private JButton b;
+    private JButton CtoF, FtoC;
  private JLabel l;
- private JTextField t;
- private JCheckBox c;
+    private JTextField Fahrs, Cels;
+
  
   //CONSTRUCTOR SETS EVERYTHING UP
   public Window2() {
@@ -19,10 +19,12 @@ public class Window2 extends JFrame {
      pane = this.getContentPane();
      pane.setLayout(new FlowLayout());  //NOTE!! THIS CAN BE CHANGED (see below)
     
-     b = new JButton("Do Nothing");
+     CtoF = new JButton("Convert C to F");
+FtoC = new JButton("Convert F to C");
      l = new JLabel("This is AWESOME! (lies)",null,JLabel.CENTER);
-     t = new JTextField(12);
-     c = new JCheckBox("Overclock!!!");
+     Fahrs = new JTextField(12);
+Cels = new JTextField(12);
+  
      pane.add(l);
      pane.add(b);
      pane.add(t);
