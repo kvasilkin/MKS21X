@@ -62,5 +62,13 @@ public class Sorts{
 		complete ++;}
 	    else {return ;
 	    }
-	}}}
+	}}
+
+public static void main (String [] args){
+    int [] emptyTester = {};
+    int [] descending  = new int [20]; 
+    int [] acending  = new int [20];
+    int [] random = new int [20];
+    int [] repeat = new int [20];
+}
 
